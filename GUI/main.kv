@@ -1,0 +1,84 @@
+<Contenedor_01>:
+    width:1920
+    height:1080
+    orientation:'vertical'
+    Renderer:
+        id:'render'
+        size_hint: 1,None
+        height: 880
+    Panel:
+        orientation:'horizontal'
+        size_hint: 1.0,None
+        height: 200
+        canvas:
+            Color:
+                rgb:0.996,0.6745,0.0
+            Rectangle:
+                size:1920,200
+        Botonera:
+            cols:6
+            rows:3
+            spacing:20
+            Button:
+                id:'btn_dp'
+                size_hint:0.1,0.33
+                text:'DP'
+                color:1,1,1
+                on_press:root.ToDP()
+            Label:
+                size_hint:0.4,0.33
+                text:'Dedo Primero' 
+            Button:
+                id:'btn_ds'
+                size_hint:0.1,0.33
+                text:'DS'
+                color:1,1,1
+                on_press:root.ToDS()
+            Label:
+                size_hint:0.4,0.33
+                text:'Dedo Segundo'
+            Button:
+                id:'btn_dt'
+                on_press:root.ToDT()
+                size_hint:0.1,0.33
+                text:'DT'
+                color:1,1,1
+            Label:
+                size_hint:0.4,0.33
+                text:'Dedo Tercero'
+            Button:
+                id:'btn_dc'
+                size_hint:0.1,0.33
+                text:'DC'
+                color:1,1,1
+                on_press:root.ToDC()
+            Label:
+                size_hint:0.4,0.33
+                text:'Dedo Cuarto'
+            Button:
+                id:'btn_dq'
+                size_hint:0.1,0.33
+                text:'DQ'
+                color:1,1,1
+                on_press:root.ToDQ()
+            Label:
+                size_hint:0.4,0.33
+                text:'Dedo Quinto'
+            Button:
+                id:'btn_cp'
+                size_hint:0.1,0.33
+                text:'CP'
+                color:1,1,1
+                on_press:root.ToCP()
+            Label:
+                size_hint:0.4,0.33
+                text:'Cuerpo Pie'
+            Button:
+                id:'btn_ta'
+                size_hint:0.1,0.33
+                text:'TA'
+                color:1,1,1
+                on_press:root.ToTA()
+            Label:
+                size_hint:0.4,0.33
+                text:'Talon'

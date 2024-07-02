@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1920</width>
+    <height>1080</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="Camaras" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1920</width>
+      <height>900</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget{
+background-color: rgb(54,54,54);
+}</string>
+    </property>
+    <widget class="QWidget" name="CamaraIzquierda" native="true">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>50</y>
+       <width>600</width>
+       <height>800</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:white</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="CamaraDerecha" native="true">
+     <property name="geometry">
+      <rect>
+       <x>1020</x>
+       <y>50</y>
+       <width>600</width>
+       <height>800</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:white</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="PanelControl" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>900</y>
+      <width>1920</width>
+      <height>180</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget{
+	background-color: rgb(254,172,0)
+}</string>
+    </property>
+    <widget class="QPushButton" name="btn_captura">
+     <property name="geometry">
+      <rect>
+       <x>870</x>
+       <y>0</y>
+       <width>180</width>
+       <height>180</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	background-color: rgb(54,54,54);
+	color: white;
+	border: 1px solid rgb(54,54,54);
+	border-radius: 80%;
+	box-sizing: border-box;
+	margin: 10px 0 10px 0;
+	font-size: 36px;
+}
+QPushButton:hover{
+	background-color: rgb(84,84,84);
+}</string>
+     </property>
+     <property name="text">
+      <string>CAPTURA</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
